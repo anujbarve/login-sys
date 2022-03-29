@@ -36,6 +36,17 @@ include_once 'header.php';
     </div>
   </div>
 
+<?php
+
+if(isset($_GET["error"])){
+  if ($_GET["error"] == "emptyinput") {
+    echo "<p>Fill all the fields<p>";
+  }else if($_GET["error"] == "wronglogin"){
+    echo "<p>Incorrect Login Info</p>";
+  }
+}
+
+?>
 <!-- / Register Form -->
 
 </body>

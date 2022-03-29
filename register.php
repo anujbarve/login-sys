@@ -47,6 +47,25 @@ include_once 'header.php';
           <hr class="my-4">
           <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
         </form>
+
+      <?php 
+      
+      if(isset($_GET["error"])){
+        if ($_GET["error"] == "emptyinput") {
+          echo "<p>Fill all the fields<p>";
+        }else if($_GET["error"] == "invaliduid"){
+          echo "<p>Choose a proper username</p>";
+        }else if($_GET["error"] == "invalidemail"){
+          echo "<p>Choose a proper email!</p>";
+        }else if($_GET["error"] == "passworddontmatch"){
+          echo "<p>Password's don't match</p>";
+        }else if($_GET["error"] == "stmtfailed"){
+          echo "<p>Something went wrong, try again!</p>";
+        }
+      }
+      
+      ?>
+
       </div>
     </div>
   </div>
