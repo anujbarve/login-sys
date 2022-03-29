@@ -15,7 +15,7 @@ include_once 'header.php';
         <p class="col-lg-10 fs-4">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
       </div>
       <div class="col-md-10 mx-auto col-lg-5">
-        <form action="login.inc.php" method="post" class="p-4 p-md-5 border rounded-3 bg-light">
+        <form action="includes/login.inc.php" method="post" class="p-4 p-md-5 border rounded-3 bg-light">
           
 
           <div class="form-floating mb-3">
